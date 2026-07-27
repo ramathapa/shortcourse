@@ -36,17 +36,27 @@ export default function CareerPage() {
       const data = await res.json();
 
       if (data.success) {
-        setStatus("✅ Application submitted successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-          resume: null,
-        });
-      } else {
-        setStatus("❌ Failed to submit application.");
-      }
+  setStatus(data.message || "✅ Application submitted successfully!");
+
+  setFormData({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    resume: null,
+  });
+
+  // Clear file input
+  const fileInput = document.querySelector(
+    'input[name="resume"]'
+  ) as HTMLInputElement | null;
+
+  if (fileInput) {
+    fileInput.value = "";
+  }
+} else {
+  setStatus(data.message || "❌ Failed to submit application.");
+}
     } catch {
       setStatus("⚠️ Network error.");
     }
