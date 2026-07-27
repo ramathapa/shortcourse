@@ -1,27 +1,26 @@
-// import Hero from "@/app/components/short-courses/Hero";
-// import Hero from "@/";
-// import CourseComparison from "@/app/components/short-courses/CourseComparison";
-// import AvailableCourses from "@/app/components/short-courses/AvailableCourses";
-// import UpcomingEvents from "@/app/components/short-courses/UpcomingEvents";
-// import WhyChoose from "@/app/components/short-courses/WhyChoose";
-// import GroupTraining from "@/app/components/short-courses/GroupTraining";
-// import FAQ from "@/app/components/short-courses/FAQ";
+import Hero from "@/components/short-courses/Hero";
+import CourseComparison from "@/components/short-courses/CourseComparison";
+import AvailableCourses from "@/components/short-courses/AvailableCourses";
+import UpcomingEvents from "@/components/short-courses/UpcomingEvents";
+import WhyChoose from "@/components/short-courses/WhyChoose";
+import GroupTraining from "@/components/short-courses/GroupTraining";
+import FAQ from "@/components/short-courses/FAQ";
 
-// export default function ShortCoursesPage() {
-//   return (
-//     <main>
+export default function ShortCoursesPage() {
+  return (
+    <main>
 
-//       <Hero />
+      <Hero />
 
-//       <AvailableCourses />
+      <AvailableCourses />
 
-//       <UpcomingEvents />
+      <UpcomingEvents />
 
-//       <WhyChoose />
-//       <CourseComparison />
-//       <GroupTraining/>
-//       <FAQ/>
+      <WhyChoose />
+      <CourseComparison />
+      <GroupTraining/>
+      <FAQ/>
 
-//     </main>
-//   );
-// }
+    </main>
+  );
+}
