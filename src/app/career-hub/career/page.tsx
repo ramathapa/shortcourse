@@ -22,45 +22,55 @@ export default function CareerPage() {
     setFormData((prev) => ({ ...prev, resume: e.target.files?.[0] || null }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("Sending...");
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setStatus("Sending...");
 
-    const body = new FormData();
-    Object.entries(formData).forEach(([key, value]) => {
-      if (value) body.append(key, value as any);
+  const body = new FormData();
+
+  body.append("name", formData.name);
+  body.append("email", formData.email);
+  body.append("phone", formData.phone);
+  body.append("message", formData.message);
+
+  if (formData.resume) {
+    body.append("resume", formData.resume);
+  }
+
+  try {
+    const res = await fetch("/api/career", {
+      method: "POST",
+      body,
     });
 
-    try {
-      const res = await fetch("/api/career", { method: "POST", body });
-      const data = await res.json();
+    const data = await res.json();
 
-      if (data.success) {
-  setStatus(data.message || "✅ Application submitted successfully!");
+    if (data.success) {
+      setStatus(data.message || "✅ Application submitted successfully!");
 
-  setFormData({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-    resume: null,
-  });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        resume: null,
+      });
 
-  // Clear file input
-  const fileInput = document.querySelector(
-    'input[name="resume"]'
-  ) as HTMLInputElement | null;
+      // Clear file input
+      const fileInput = document.querySelector(
+        'input[name="resume"]'
+      ) as HTMLInputElement | null;
 
-  if (fileInput) {
-    fileInput.value = "";
-  }
-} else {
-  setStatus(data.message || "❌ Failed to submit application.");
-}
-    } catch {
-      setStatus("⚠️ Network error.");
+      if (fileInput) {
+        fileInput.value = "";
+      }
+    } else {
+      setStatus(data.message || "❌ Failed to submit application.");
     }
-  };
+  } catch {
+    setStatus("⚠️ Network error.");
+  }
+};
 
   return (
     <main className="bg-gray-50 text-gray-800">
