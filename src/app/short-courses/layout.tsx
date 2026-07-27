@@ -1,6 +1,6 @@
 // app/about/layout.tsx
 import type React from "react";
-// import CTAOtherPage from "../components/CTAOtherPage";
+import CTAOtherPage from "@/components/CTAOtherPage";
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +9,7 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
       {children}
 
       {/* Render your component above footer */}
-      {/* <CTAOtherPage /> */}
+      <CTAOtherPage />
     </>
   );
 }
