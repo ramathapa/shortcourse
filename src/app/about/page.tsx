@@ -15,7 +15,7 @@ export default function AboutUsPage() {
       {/* ================= HERO SECTION ================= */}
       <section className="relative w-full h-[70vh] md:h-[60vh] flex items-end justify-start px-6 md:px-16 pb-16">
         <Image
-          src="/about/about-hero.jpg" // replace with your image
+          src="/about/hero.jpg" // replace with your image
           alt="About Cardinal Institute of Education"
           fill
           priority
@@ -67,7 +67,7 @@ export default function AboutUsPage() {
           {/* Right Column - Image */}
           <div className="flex justify-center md:justify-end items-center">
             <img
-              src="/about/about-image.png"
+              src="/about/about.png"
               alt="About Cardinal Institute"
               className="w-full max-h-[500px] sm:max-h-[600px] md:max-h-[700px] lg:max-h-[850px] object-cover rounded-xl shadow-md"
             />
