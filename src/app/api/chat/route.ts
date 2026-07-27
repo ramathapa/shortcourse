@@ -6,11 +6,17 @@ import Chat from "@/models/Chat";
 function similarity(a: string, b: string) {
   a = a.toLowerCase();
   b = b.toLowerCase();
-  let longer = a.length > b.length ? a : b;
-  let shorter = a.length > b.length ? b : a;
-  let longerLength = longer.length;
+
+  const longer = a.length > b.length ? a : b;
+  const shorter = a.length > b.length ? b : a;
+  const longerLength = longer.length;
+
   if (longerLength === 0) return 1.0;
-  return (longerLength - editDistance(longer, shorter)) / longerLength;
+
+  return (
+    (longerLength - editDistance(longer, shorter)) /
+    longerLength
+  );
 }
 
 function editDistance(a: string, b: string) {
