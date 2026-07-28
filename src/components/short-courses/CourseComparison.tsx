@@ -171,7 +171,7 @@ export default function CourseComparison() {
             </p>
 
             <Link
-              href="/courses/short-courses/HLTAID009CoursePage"
+              href="/short-courses/HLTAID009CoursePage"
               className="inline-block mt-8 bg-[#0B1F3A] text-white px-8 py-3 rounded-xl hover:bg-[#173d69]"
             >
               View CPR Course
@@ -196,7 +196,7 @@ export default function CourseComparison() {
             </p>
 
             <Link
-              href="/courses/short-courses/HLTAID011CoursePage"
+              href="/short-courses/HLTAID011CoursePage"
               className="inline-block mt-8 bg-[#C4A15A] text-white px-8 py-3 rounded-xl hover:bg-[#b39146]"
             >
               View First Aid Course

@@ -163,28 +163,32 @@ export default function EnrolPage() {
 
       {/* ESKILLED */}
 
-      <section className="pb-20">
+     {/* ESKILLED */}
+<section className="pb-20">
+  <div className="max-w-6xl mx-auto px-6 bg-white rounded-xl shadow overflow-hidden">
 
-        <div className="max-w-6xl mx-auto px-6 bg-white rounded-xl shadow overflow-hidden">
+    <div className="p-8">
+      <h2 className="text-3xl font-bold text-[#0B1F3A]">
+        Complete Your Enrolment
+      </h2>
 
-          <div className="p-8">
+      <p className="text-gray-600 mt-2">
+        Please complete the enrolment form below.
+      </p>
+    </div>
 
-            <h2 className="text-3xl font-bold">
-              Complete Your Enrolment
-            </h2>
+    <iframe
+      src={iframeUrl}
+      title="Course Enrolment Form"
+      className="w-full border-0"
+      style={{
+        height: "500px",
+        display: "block",
+      }}
+    />
 
-          </div>
-
-          <iframe
-            src={iframeUrl}
-            width="100%"
-            height="7800"
-            frameBorder="0"
-          />
-
-        </div>
-
-      </section>
+  </div>
+</section>
 
     </main>
   );
