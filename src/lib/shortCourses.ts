@@ -100,7 +100,7 @@ export const shortCourses: ShortCourse[] = [
 
     refresher: "Recommended every 12 months",
 
-    price: "$150",
+    price: "-",
 
     pageUrl: "/short-courses/HLTAID009CoursePage", 
 
@@ -188,7 +188,7 @@ export const shortCourses: ShortCourse[] = [
 
     refresher: "Recommended every 3 years",
 
-    price: "$150",
+    price: "-",
 
     pageUrl: "/short-courses/HLTAID011CoursePage",
 
