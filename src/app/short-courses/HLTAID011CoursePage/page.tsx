@@ -202,7 +202,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 </p>
 
 <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
-  Through hands-on training, you'll learn to assess incidents, provide CPR, treat common injuries and illnesses, and deliver first aid until professional medical assistance arrives.
+  Through hands-on training, you&apos;ll learn to assess incidents, provide CPR, treat common injuries and illnesses, and deliver first aid until professional medical assistance arrives.
 </p>
 
 <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-8">
