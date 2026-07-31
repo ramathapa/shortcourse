@@ -42,20 +42,18 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
 
             <div className="rounded-full bg-white/30 backdrop-blur px-4 py-2 text-white">
-              ✔ Face-to-face
+              ✔ 1 Day (8 Hours) Equivalent
             </div>
 
             <div className="rounded-full bg-white/30 backdrop-blur px-4 py-2 text-white">
-              ✔ Nationally Recognised
+              ✔ Blended (online assessment + face-to-face training)
             </div>
 
             <div className="rounded-full bg-white/30 backdrop-blur px-4 py-2 text-white">
-              ✔ Same Day Assessment
+              ✔ Statement of Attainment (Issued same day)
             </div>
 
-            <div className="rounded-full bg-white/30 backdrop-blur px-4 py-2 text-white">
-              ✔ Statement of Attainment
-            </div>
+            
 
           </div>
 

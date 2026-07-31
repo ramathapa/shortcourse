@@ -148,7 +148,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
 📞 04 0670 5649
 
-✉️ admin@cardinalinstitute.com.au`,
+✉️ info@cardinalinstitute.com.au`,
     },
   ];
 
@@ -225,36 +225,17 @@ Successful participants receive a nationally recognised Statement of Attainment.
             <h2 className="text-2xl sm:text-3xl font-bold text-[#2a6f97] mb-4">
               COURSE OVERVIEW
             </h2>
+<p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
+  HLTAID009 Provide Cardiopulmonary Resuscitation equips participants with the essential skills and confidence to perform CPR in line with Australian Resuscitation Council (ARC) guidelines.
+</p>
 
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
-              HLTAID009 Provide Cardiopulmonary Resuscitation covers the
-              skills and knowledge needed to perform CPR in accordance with
-              Australian Resuscitation Council (ARC) guidelines. It applies
-              to a broad range of people who may need to respond to a
-              life-threatening emergency in a workplace, community, care,
-              education, security, hospitality, sport, or general public
-              setting.
-            </p>
+<p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
+  Learn how to recognise cardiac emergencies, perform CPR, use an Automated External Defibrillator (AED), and provide life-saving support until emergency services arrive.
+</p>
 
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
-              This practical, job-relevant course gives participants the
-              confidence to recognise a cardiac arrest emergency, call for
-              help, provide CPR, and use an automated external defibrillator
-              (AED).
-            </p>
-
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
-              Essential theory is combined with demonstration and supervised
-              hands-on practice so participants understand both what to do
-              and why it matters.
-            </p>
-
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
-              Participants work through the basic life support action plan,
-              practise CPR techniques on manikins, and explore how the
-              response may differ depending on the casualty&apos;s age and
-              the circumstances of the incident.
-            </p>
+<p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+  This nationally recognised course combines practical hands-on training with expert instruction, making it ideal for workplace compliance, professional development, and personal preparedness.
+</p>
 
             {/* COURSE DETAILS */}
 
@@ -324,7 +305,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
             <div className="space-y-3 text-sm sm:text-base">
 
-              <p>✔ One-Day Course</p>
+              <p>✔ 1 day equivalent (same day certification)</p>
               <p>✔ Hands-On CPR &amp; AED Practice</p>
               <p>✔ Simulated Cardiac Emergencies</p>
               <p>✔ Experienced Professional Trainers</p>
@@ -345,7 +326,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
             {/* IDEAL FOR */}
 
-            <div className="border-t border-gray-700 pt-4">
+            {/* <div className="border-t border-gray-700 pt-4">
 
               <p className="text-sm text-gray-300 text-center mb-2">
                 🎯 Ideal For:
@@ -360,7 +341,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
               </div>
 
-            </div>
+            </div> */}
 
             {/* TRUST */}
 

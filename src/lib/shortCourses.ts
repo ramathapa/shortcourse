@@ -92,11 +92,11 @@ export const shortCourses: ShortCourse[] = [
 
     image: "/courses/CPR.png",
 
-    duration: "1 Day (8 Hours)",
+    duration: "1 day equivalent (same day certification)",
 
-    delivery: "Face-to-face",
+    delivery: "Blended mode (2-3 hrs Face-to-face training + online assessment) Contact us for more information or for other special requirements",
 
-    certificate: "Statement of Attainment",
+    certificate: "Statement of Attainment (issued same day)",
 
     refresher: "Recommended every 12 months",
 
@@ -180,11 +180,11 @@ export const shortCourses: ShortCourse[] = [
 
     image: "/courses/firstaidd.png",
 
-    duration: "1 Day (8 Hours)",
+   duration: "1 day equivalent (same day certification)",
 
-    delivery: "Face-to-face",
+    delivery: "Blended mode (2-3 hrs Face-to-face training + online assessment) Contact us for more information or for other special requirements",
 
-    certificate: "Statement of Attainment",
+    certificate: "Statement of Attainment (issued same day)",
 
     refresher: "Recommended every 3 years",
 

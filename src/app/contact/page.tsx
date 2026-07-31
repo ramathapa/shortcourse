@@ -66,7 +66,7 @@ export default function ContactPage() {
             
 
             <p className="text-gray-700 leading-relaxed tracking-wide text-lg">
-          We’re here to help. Whether you’d like to know more about a course, check your eligibility, ask about work placement or simply talk through your options, the team at Cardinal Institute of Education is happy to hear from you. Send us a message using the form below, call us during office hours, or visit us — we welcome prospective students and their families. </p>
+          We’re here to help. Whether you’d like to know more about a course, check your eligibility, ask about work placement or simply talk through your options, the team at Cardinal Institute of Education is happy to hear from you. Send us a message, call us during office hours, or visit us for more information. </p>
           </div>
 
           {/* RIGHT SIDE — FORM (SWAPPED) */}

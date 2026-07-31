@@ -126,7 +126,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
 📞 04 0670 5649
 
-✉️ admin@cardinalinstitute.com.au`,
+✉️ info@cardinalinstitute.com.au`,
     },
   ];
 
@@ -197,29 +197,17 @@ Successful participants receive a nationally recognised Statement of Attainment.
               COURSE OVERVIEW
             </h2>
 
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
-              HLTAID011 Provide First Aid covers the skills and knowledge needed
-              to deliver a first aid response to a casualty in accordance with
-              guidelines set by the Australian Resuscitation Council (ARC) and
-              other national peak clinical bodies. It applies to anyone who may
-              need to respond to an incident in a workplace, education,
-              community, care, hospitality, sport, security, or general public
-              setting.
-            </p>
+           <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
+  HLTAID011 Provide First Aid equips participants with the practical skills and knowledge to respond confidently to emergencies in accordance with Australian Resuscitation Council (ARC) guidelines.
+</p>
 
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
-              As one of the most widely recognised workplace first aid programs
-              in Australia, this course gives participants the knowledge and
-              confidence to assess an incident, manage a casualty, communicate
-              effectively, and provide an initial first aid response until
-              further assistance is available.
-            </p>
+<p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-6">
+  Through hands-on training, you'll learn to assess incidents, provide CPR, treat common injuries and illnesses, and deliver first aid until professional medical assistance arrives.
+</p>
 
-            <p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-8">
-              The course combines theory with practical application and suits
-              anyone seeking a nationally recognised first aid qualification
-              for work, compliance, or personal preparedness.
-            </p>
+<p className="text-gray-800 text-sm sm:text-base leading-relaxed mb-8">
+  Ideal for workplaces and the community, this nationally recognised course prepares you to respond quickly and effectively in emergency situations.
+</p>
 
             <div className="space-y-4 text-sm sm:text-base text-gray-900">
 
@@ -276,7 +264,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
             </div>
 
             <div className="space-y-3 text-sm sm:text-base">
-              <p>✔ One-Day Course (8 Hours)</p>
+              <p>✔ 1 day equivalent (same day certification)</p>
               <p>✔ Hands-On CPR &amp; AED Practice</p>
               <p>✔ Real-Life Emergency Scenarios</p>
               <p>✔ Experienced Professional Trainers</p>
@@ -290,7 +278,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
               Enrol Now
             </Link>
 
-            <div className="border-t border-gray-700 pt-4">
+            {/* <div className="border-t border-gray-700 pt-4">
               <p className="text-sm text-gray-300 text-center mb-2">
                 🎯 Ideal For:
               </p>
@@ -301,7 +289,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
                 <p>• Community Support Workers</p>
                 <p>• Construction &amp; Trade Workers</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="text-center">
               <p className="text-sm text-gray-300">
