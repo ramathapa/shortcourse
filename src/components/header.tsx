@@ -94,9 +94,10 @@ export default function Header() {
     },
 
    { name: "FAQ", path: "/faq" },
-    { name: "Career Hub", path: "/career-hub" },
+    // { name: "Career Hub", path: "/career-hub" },
     
-    { name: "Contact", path: "/contact" },
+    { name: "Corporate", path: "/corporate" },
+     { name: "Contact", path: "/contact" },
     
   ];
 
