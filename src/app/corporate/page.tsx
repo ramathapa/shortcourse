@@ -7,7 +7,6 @@ import {
   Users,
   CalendarDays,
   MapPin,
-  Clock3,
   CheckCircle,
   Phone,
   Mail,
@@ -206,11 +205,11 @@ export default function CorporateBookingsPage() {
             Request a Corporate Training Quote
           </h2>
 
-          <p className="mt-6 text-gray-300 max-w-3xl mx-auto">
-            Tell us how many staff you need to train and your preferred
-            location. We'll provide a tailored corporate training solution for
-            your organisation.
-          </p>
+      <p className="mt-6 text-gray-300 max-w-3xl mx-auto">
+  Tell us how many staff you need to train and your preferred
+  location. We&apos;ll provide a tailored corporate training solution
+  for your organisation.
+</p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-14">
 
@@ -223,7 +222,7 @@ export default function CorporateBookingsPage() {
             <div>
               <Mail className="mx-auto text-[#C4A15A]" size={34} />
               <p className="mt-4 font-semibold">Email</p>
-              <p>admin@cardinalinstitute.com.au</p>
+              <p>info@cardinalinstitute.com.au</p>
             </div>
 
             <div>
