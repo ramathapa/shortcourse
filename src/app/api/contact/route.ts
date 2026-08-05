@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     // Send email
     await transporter.sendMail({
       from: `"Cardinal Website Contact" <${process.env.EMAIL_USER}>`,
-      to: "ramathapa130@gmail.com",
+      to: "info@cardinalinstitute.com.au",
       replyTo: email,
       subject: "New Contact Form Enquiry - Cardinal Institute",
 

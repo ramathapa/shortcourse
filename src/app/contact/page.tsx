@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Phone, Mail, MapPin, Clock, BadgeCheck  } from "lucide-react";
 import PhoneInput from "react-phone-input-2";
 import Link from "next/link";
-import "react-phone-input-2/lib/style.css";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
