@@ -125,7 +125,7 @@ export default function Header() {
   {/* Email */}
   <div className="flex items-center gap-1 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
     <Mail className="w-6 h-6 text-[#C4A15A]" />
-    <span>info@cardinalinstitute.com.au</span>
+    <span>info@cardinalinstitute.edu.au</span>
   </div>
 </div>
 

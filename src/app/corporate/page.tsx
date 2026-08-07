@@ -222,7 +222,7 @@ export default function CorporateBookingsPage() {
             <div>
               <Mail className="mx-auto text-[#C4A15A]" size={34} />
               <p className="mt-4 font-semibold">Email</p>
-              <p>info@cardinalinstitute.com.au</p>
+              <p>info@cardinalinstitute.edu.au</p>
             </div>
 
             <div>

@@ -148,7 +148,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
 📞 04 0670 5649
 
-✉️ info@cardinalinstitute.com.au`,
+✉️ info@cardinalinstitute.edu.au`,
     },
   ];
 

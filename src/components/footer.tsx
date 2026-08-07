@@ -145,7 +145,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#C4A15A]" />
-                <span>info@cardinalinstitute.com.au</span>
+                <span>info@cardinalinstitute.edu.au</span>
               </li>
             </ul>
 

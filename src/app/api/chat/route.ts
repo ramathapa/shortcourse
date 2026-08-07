@@ -51,7 +51,7 @@ const CONTACT = {
   // TODO: source documents show "admin@cardinainstitute.com.au" (TAS — note the
   // missing "l" in "cardinal") and "info@tba" (Fees policy). Confirm the real
   // address before publishing.
-  email: "admin@cardinalinstitute.com.au",
+  email: "info@cardinalinstitute.edu.au",
   // TODO: TAS CHC33021 lists Level 6, 56-58 York Street, Sydney NSW 2000 as the
   // delivery location, while the Refund Request Form lists the Blacktown office.
   // Confirm which address is the training venue and which is administrative.

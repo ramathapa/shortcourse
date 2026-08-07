@@ -202,7 +202,7 @@ export default function AboutUsPage() {
               <Mail className="text-[#CBA3A3]" />
               <div>
                 <p className="font-medium text-lg">Email</p>
-                <p>info@cardinalinstitute.com.au</p>
+                <p>info@cardinalinstitute.edu.au</p>
               </div>
             </div>
 
