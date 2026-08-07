@@ -179,11 +179,11 @@ export default function RefundPolicyPage() {
         <p className="text-gray-700">
           Cardinal Institute of Education
           <br />
-          Suite 207/30 Campbell St, Blacktown NSW 2148
+          Level 6, 56-58 York Street, Sydney NSW 2000
           <br />
           Phone:{" "}
-          <a href="tel:0406705649" className="text-[#0B1F3A] font-semibold">
-            0406 705 649
+          <a href="tel : +0285308337" className="text-[#0B1F3A] font-semibold">
+            02 8530 8337
           </a>
         </p>
 

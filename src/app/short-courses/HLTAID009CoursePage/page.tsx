@@ -363,13 +363,13 @@ Successful participants receive a nationally recognised Statement of Attainment.
               </h3>
 
               <a
-                href="tel:0406705649"
+                href="tel : +0285308337"
                 className="block bg-white text-black py-2 rounded-full font-semibold hover:-translate-y-1 transition"
               >
                 Call Now
                 <br />
                 <span className="text-sm">
-                  (04) 0670 5649
+                  02 8530 8337
                 </span>
               </a>
 

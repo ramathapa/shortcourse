@@ -11,7 +11,7 @@ function getBotReply(text: string) {
   if (lower.includes("course"))
     return "We offer Certificate III & IV in Ageing and Disability, plus First Aid & CPR courses.";
   if (lower.includes("contact") || lower.includes("phone"))
-    return "You can contact us at 04 5260 3303.";
+    return "You can contact us at 02 8530 8337.";
   if (lower.includes("email"))
     return "Our email is info@caringalliance.com.au.";
   if (lower.includes("location"))

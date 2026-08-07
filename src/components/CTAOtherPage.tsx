@@ -22,7 +22,7 @@ export default function CTAOtherPage() {
 
   {/* Call Button */}
   <a
-    href="tel:0452603303"
+    href="tel:+0285308337"
     className="inline-flex items-center justify-center text-[#0a2d52] text-lg font-semibold bg-white px-6 py-3 rounded-xl shadow hover:bg-[#C4A15A] hover:text-white transition"
   >
     <Phone className="w-5 h-5 mr-2" />

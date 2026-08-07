@@ -33,7 +33,7 @@ export default function CorporateBookingsPage() {
       {/* HERO */}
       <section className="relative h-[60vh] flex items-center">
         <Image
-          src="/corporate/corporate.jpg"
+          src="/corporate/corporate.png"
           alt="Corporate Bookings"
           fill
           priority
@@ -216,7 +216,7 @@ export default function CorporateBookingsPage() {
             <div>
               <Phone className="mx-auto text-[#C4A15A]" size={34} />
               <p className="mt-4 font-semibold">Call Us</p>
-              <p>(04) 0670 5649</p>
+              <p>02 8530 8337</p>
             </div>
 
             <div>

@@ -176,7 +176,7 @@ export default function ContactPage() {
               <Phone className="text-[#CBA3A3]" />
               <div>
                 <p className="font-medium text-lg">Phone</p>
-                <p>xx xxxx xxxx</p>
+                <p>02 8530 8337</p>
               </div>
             </div>
 
