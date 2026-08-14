@@ -74,20 +74,23 @@ export default function CourseComparison() {
 
         <div className="text-center mb-14">
 
-          <span className="text-[#C4A15A] uppercase font-semibold tracking-[3px]">
+           <span className="text-[#C4A15A] font-semibold uppercase tracking-widest">
+            
             Compare Courses
           </span>
 
-          <h2 className="text-4xl font-bold text-[#0B1F3A] mt-4">
+             <h2 className="text-4xl lg:text-[2.6rem] leading-[1.1] tracking-wide font-extrabold text-[#0B1F3A] w-full mt-2">
             CPR vs First Aid
           </h2>
 
-          <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
+           <p className="text-[#0B1F3A] text-lg leading-relaxed max-w-3xl mx-auto mt-5">
             Not sure which course is right for you?
             Compare our nationally recognised courses side-by-side.
           </p>
 
         </div>
+
+           
 
         <div className="overflow-x-auto rounded-3xl shadow-xl bg-white">
 
@@ -130,15 +133,15 @@ export default function CourseComparison() {
                   className="border-b hover:bg-gray-50"
                 >
 
-                  <td className="p-5 font-semibold text-[#0B1F3A]">
+                  <td className="p-5 text-lg font-semibold text-[#0B1F3A]">
                     {row.feature}
                   </td>
 
-                  <td className="p-5 text-center">
+                  <td className="p-5 tracking-wide text-center">
                     {renderValue(row.cpr)}
                   </td>
 
-                  <td className="p-5 text-center">
+                  <td className="p-5 text-center tracking-wide">
                     {renderValue(row.firstAid)}
                   </td>
 
@@ -156,15 +159,15 @@ export default function CourseComparison() {
 
           <div className="bg-white rounded-3xl shadow-lg p-8 border">
 
-            <h3 className="text-2xl font-bold text-[#0B1F3A] mb-4">
+            <h3 className="text-xl font-bold text-[#0B1F3A] mb-4">
               HLTAID009
             </h3>
 
-            <h4 className="text-lg font-semibold text-[#C4A15A] mb-5">
+            <h4 className="text-2xl font-semibold text-[#C4A15A] mb-5">
               Provide Cardiopulmonary Resuscitation
             </h4>
 
-            <p className="text-gray-600 leading-7">
+            <p className="text-lg text-[#0B1F3A]/90 leading-relaxed w-full">
               Ideal for those needing CPR certification or an annual CPR
               refresher. Learn CPR, use an AED and respond confidently to
               cardiac emergencies.
@@ -172,7 +175,7 @@ export default function CourseComparison() {
 
             <Link
               href="/short-courses/HLTAID009CoursePage"
-              className="inline-block mt-8 bg-[#0B1F3A] text-white px-8 py-3 rounded-xl hover:bg-[#173d69]"
+              className="inline-block mt-8 bg-[#0B1F3A] text-white font-semibold px-8 py-3 rounded-xl hover:bg-[#173d69]"
             >
               View CPR Course
             </Link>
@@ -181,15 +184,15 @@ export default function CourseComparison() {
 
           <div className="bg-white rounded-3xl shadow-lg p-8 border border-[#C4A15A]">
 
-            <h3 className="text-2xl font-bold text-[#0B1F3A] mb-4">
+            <h3 className="text-xl font-bold text-[#0B1F3A] mb-4">
               HLTAID011
             </h3>
 
-            <h4 className="text-lg font-semibold text-[#C4A15A] mb-5">
+            <h4 className="text-2xl font-semibold text-[#C4A15A] mb-5">
               Provide First Aid
             </h4>
 
-            <p className="text-gray-600 leading-7">
+           <p className="text-lg text-[#0B1F3A]/90 leading-relaxed w-full">
               Perfect for workplaces, childcare, healthcare,
               disability support and anyone wanting comprehensive
               emergency response skills beyond CPR.
@@ -197,7 +200,7 @@ export default function CourseComparison() {
 
             <Link
               href="/short-courses/HLTAID011CoursePage"
-              className="inline-block mt-8 bg-[#C4A15A] text-white px-8 py-3 rounded-xl hover:bg-[#b39146]"
+              className="inline-block mt-8 bg-[#C4A15A] text-white font-semibold px-8 py-3 rounded-xl hover:bg-[#b39146]"
             >
               View First Aid Course
             </Link>

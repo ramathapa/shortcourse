@@ -20,18 +20,18 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6">
         <div className="max-w-3xl">
 
-          <span className="inline-flex items-center rounded-full bg-[#F4C300] px-4 py-2 text-sm font-semibold text-[#0B1F3A]">
+          <span className="inline-flex items-center rounded-full bg-[#F4C300] px-4 py-2 text-sm tracking-wide font-semibold text-[#0B1F3A]">
             Nationally Recognised First Aid Training
           </span>
 
-          <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight text-white">
+          <h1 className="mt-6 text-4xl md:text-6xl font-extrabold leading-tight tracking-wide text-white">
             First Aid & CPR
-            <span className="block text-[#F4C300]">
+            <span className="block text-[#F4C300] tracking-wide">
               Short Courses
             </span>
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-gray-200 leading-8">
+          <p className="mt-6 text-lg md:text-xl text-gray-200 tracking-wide leading-8">
             Build practical, life-saving skills with nationally recognised
             CPR and First Aid training delivered by experienced trainers.
             Learn through hands-on practical sessions aligned with Australian
@@ -39,7 +39,7 @@ export default function Hero() {
           </p>
 
           {/* Quick Facts */}
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-3 tracking-wide">
 
             <div className="rounded-full bg-white/30 backdrop-blur px-4 py-2 text-white">
               ✔ 1 Day (8 Hours) Equivalent
@@ -62,14 +62,14 @@ export default function Hero() {
 
             <Link
               href="#courses"
-              className="rounded-full bg-[#F4C300] px-8 py-4 text-[#0B1F3A] font-bold hover:bg-[#ddb000] transition"
+              className="rounded-full bg-[#F4C300] px-8 py-4 text-[#0B1F3A] font-semibold hover:bg-[#ddb000] tracking-wide transition"
             >
               View Courses
             </Link>
 
             <Link
               href="#events"
-              className="rounded-full border-2 border-white px-8 py-4 font-bold text-white hover:bg-white hover:text-[#0B1F3A] transition"
+              className="rounded-full border-2 border-white px-8 py-4 font-semibold text-white hover:bg-white tracking-wide hover:text-[#0B1F3A] transition"
             >
               View Upcoming Dates
             </Link>

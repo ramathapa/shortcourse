@@ -62,7 +62,7 @@ export default function GroupTraining() {
             Corporate & Workplace Training
           </span>
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-5 text-[#0B1F3A]">
+          <h2 className="text-4xl lg:text-[2.6rem] leading-[1.1] tracking-wide font-extrabold text-[#0B1F3A] w-full mt-4">
             Group First Aid & CPR Training
           </h2>
 
@@ -96,11 +96,11 @@ export default function GroupTraining() {
 
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#0B1F3A] mb-4">
+                <h3 className="text-2xl font-bold text-[#0B1F3A] tracking-wide  mb-4">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-600 leading-7">
+                <p className="text-gray-600 tracking-wide leading-7">
                   {item.description}
                 </p>
 
@@ -124,17 +124,18 @@ export default function GroupTraining() {
                 Corporate Bookings
               </span>
 
-              <h3 className="text-4xl font-bold text-[#0B1F3A] mt-4">
+              <h3 className="text-4xl font-bold tracking-wide font-extrabold  text-[#0B1F3A] mt-4">
+                
                 Need Training for Your Team?
               </h3>
 
-              <p className="mt-6 text-gray-600 leading-8">
+              <p className="mt-6 text-gray-600 tracking-wide leading-8">
                 Whether you need training for a small team or an entire
                 organisation, we provide flexible workplace solutions
                 tailored to your schedule, location and compliance needs.
               </p>
 
-              <div className="mt-8 space-y-3 text-[#0B1F3A]">
+              <div className="mt-8 space-y-3 tracking-wide text-[#0B1F3A]">
 
                 <p>✓ On-site workplace or campus training</p>
 
@@ -152,7 +153,7 @@ export default function GroupTraining() {
 
                 <Link
                   href="/corporate-bookings"
-                  className="inline-flex items-center gap-2 bg-[#0B1F3A] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#173d69] transition"
+                  className="inline-flex items-center gap-2 bg-[#0B1F3A] text-white px-8 py-4 rounded-xl font-semibold tracking-wide hover:bg-[#173d69] transition"
                 >
                   Learn More
 
@@ -161,7 +162,7 @@ export default function GroupTraining() {
 
                 <a
                   href="tel : +0285308337"
-                  className="inline-flex items-center px-8 py-4 border border-[#0B1F3A] rounded-xl text-[#0B1F3A] font-semibold hover:bg-[#0B1F3A] hover:text-white transition"
+                  className="inline-flex items-center px-8 py-4 border border-[#0B1F3A] rounded-xl text-[#0B1F3A] font-semibold tracking-wide hover:bg-[#0B1F3A] hover:text-white transition"
                 >
                   Call 02 8530 8337
                 </a>
@@ -184,7 +185,7 @@ export default function GroupTraining() {
                   Participants?
                 </p>
 
-                <p className="mt-4 max-w-sm leading-7 text-gray-300">
+                <p className="mt-4 max-w-sm leading-7 tracking-wide text-gray-300">
                   Receive discounted group pricing and customised
                   First Aid & CPR training delivered by experienced
                   trainers at your workplace or our training centre.

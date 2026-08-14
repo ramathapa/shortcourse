@@ -28,11 +28,11 @@ export default function UpcomingEvents({
             Upcoming Training
           </span>
 
-          <h2 className="text-4xl font-bold text-[#0B1F3A] mt-3">
+             <h2 className="text-4xl lg:text-[2.6rem] leading-[1.1] tracking-wide font-extrabold text-[#0B1F3A] w-full mt-2">
             Upcoming Course Dates
           </h2>
 
-          <p className="text-gray-600 mt-4">
+        <p className="text-[#0B1F3A] text-lg leading-relaxed max-w-3xl mx-auto mt-5">
             Select a course date below to secure your place.
           </p>
 
@@ -93,7 +93,7 @@ export default function UpcomingEvents({
                     <td className="p-5 text-center">
                       <Link
                         href={`/short-courses/${course?.slug}/enrol?event=${event.id}`}
-                        className="inline-block bg-[#C4A15A] text-white px-6 py-3 rounded-xl hover:bg-[#b3904b] transition"
+                        className="inline-block bg-[#C4A15A] font-semibold  text-white px-6 py-3 rounded-xl hover:bg-[#b3904b] transition"
                       >
                         Book Now
                       </Link>

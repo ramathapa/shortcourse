@@ -10,10 +10,10 @@ export default function CTAOtherPage() {
     <main className="bg-[#f7f9fa] text-[#002A4E] py-10 px-6">
       {/* Footer CTA */}
       <section className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 text-[#002A4E]">
+        <h2 className="text-4xl font-bold mb-4 tracking-wide  text-[#002A4E]">
           Join Cardinal Institute of Education
         </h2>
-        <p className="text-xl text-[#445b73] mb-6 max-w-2xl mx-auto">
+        <p className="text-xl text-[#445b73] tracking-wide  mb-6 max-w-2xl mx-auto">
           Build a meaningful career and grow with a community that believes in excellence, values, and opportunities.
         </p>
         {/* Call Option */}

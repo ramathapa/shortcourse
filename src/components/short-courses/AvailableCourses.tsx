@@ -17,11 +17,12 @@ export default function AvailableCourses() {
             Available Courses
           </span>
 
-          <h2 className="text-4xl font-bold text-[#0B1F3A] mt-3">
+          <h2 className="text-4xl lg:text-[2.6rem] leading-[1.1] tracking-wide font-extrabold text-[#0B1F3A] w-full mt-2">
             Choose Your Course
           </h2>
 
-          <p className="text-gray-600 max-w-3xl mx-auto mt-5">
+          <p className="text-[#0B1F3A] text-lg leading-relaxed max-w-3xl mx-auto mt-5">
+            
             Whether you need CPR certification or a comprehensive First Aid
             qualification, Cardinal Institute delivers nationally recognised
             training with experienced trainers and practical learning.
@@ -67,7 +68,7 @@ export default function AvailableCourses() {
                   {course.title}
                 </h3>
 
-                <p className="mt-4 text-gray-600 leading-7">
+                <p className="mt-4 text-gray-600 leading-7 text-lg">
                   {course.description}
                 </p>
 
@@ -95,14 +96,14 @@ export default function AvailableCourses() {
 
                   <Link
                     href={course.pageUrl}
-                    className="flex-1 text-center bg-[#0B1F3A] text-white py-3 rounded-xl font-semibold hover:bg-[#102a4f]"
+                    className="flex-1 text-center bg-[#0B1F3A] text-white font-semibold  py-3 rounded-xl font-semibold hover:bg-[#102a4f]"
                   >
                     View Course
                   </Link>
 
                   <Link
                     href="#events"
-                    className="flex items-center justify-center gap-2 flex-1 border border-[#C4A15A] text-[#C4A15A] rounded-xl font-semibold hover:bg-[#C4A15A] hover:text-white transition"
+                    className="flex items-center justify-center gap-2 flex-1 border border-[#C4A15A] text-[#C4A15A] font-semibold  rounded-xl  hover:bg-[#C4A15A] hover:text-white transition"
                   >
                     View Dates
                     <ArrowRight size={18}/>
