@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
+import { connectToDatabase } from "@/lib/mongodb";
 import Chat from "@/models/Chat";
 
 export async function GET() {
-  await connectDB();
+  await connectToDatabase();
 
   let chat = await Chat.findOne().sort({ createdAt: -1 });
 

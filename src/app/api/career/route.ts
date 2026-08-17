@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
+import { connectToDatabase } from "@/lib/mongodb";
 import Career from "@/models/career";
 import { transporter } from "@/lib/mailer";
 
@@ -60,7 +60,7 @@ export async function POST(req: Request) {
     const resumeBuffer = Buffer.from(await resume.arrayBuffer());
 
     // Connect MongoDB
-    await connectDB();
+    await connectToDatabase();
 
     // Save application
     const career = await Career.create({

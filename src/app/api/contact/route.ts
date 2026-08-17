@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 import { connectToDatabase } from "@/lib/mongodb";
 
-import Contact from "@/lib/models/Contact";
+import Contact from "@/models/Contact";
 
 import { transporter } from "@/lib/mailer";
 

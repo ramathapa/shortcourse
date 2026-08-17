@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
+import { connectToDatabase } from "@/lib/mongodb";
 import Chat from "@/models/Chat";
 import fs from "fs";
 import path from "path";
@@ -27,7 +27,7 @@ function getBotReply(text: string) {
 }
 
 export async function POST(req: Request) {
-  await connectDB();
+  await connectToDatabase();
 
   let messageText = "";
   let chatId: string | null = null;

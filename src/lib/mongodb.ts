@@ -1,39 +1,35 @@
 import mongoose from "mongoose";
 
-// const MONGODB_URI="mongodb+srv://shortcourseuser:cg3rTKAq6mnMKTZ0@orchid.bpzyobi.mongodb.net/shortcourse";
-
-// if (!MONGODB_URI) {
-//   throw new Error("Please define MONGODB_URI in .env.local");
-// }
 const MONGODB_URI="mongodb://shortcourseuser:cg3rTKAq6mnMKTZ0@ac-bx9hhjl-shard-00-00.bpzyobi.mongodb.net:27017,ac-bx9hhjl-shard-00-01.bpzyobi.mongodb.net:27017,ac-bx9hhjl-shard-00-02.bpzyobi.mongodb.net:27017/?ssl=true&replicaSet=atlas-ubomtq-shard-0&authSource=admin";
 if (!MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable in .env.local")
+  throw new Error(
+    "Please define the MONGODB_URI environment variable in .env.local"
+  );
 }
 
-interface MongooseCache {
-  conn: typeof mongoose | null;
-  promise: Promise<typeof mongoose> | null;
+/*
+  To prevent creating multiple connections in development,
+  we use a global cached variable.
+*/
+
+let cached = (global as any).mongoose;
+
+if (!cached) {
+  cached = (global as any).mongoose = {
+    conn: null,
+    promise: null,
+  };
 }
 
-declare global {
-  // eslint-disable-next-line no-var
-  var mongoose: MongooseCache | undefined;
-}
-
-const cached: MongooseCache = global.mongoose || {
-  conn: null,
-  promise: null,
-};
-
-global.mongoose = cached;
-
-export async function connectDB(): Promise<typeof mongoose> {
+export async function connectToDatabase() {
   if (cached.conn) {
     return cached.conn;
   }
 
   if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGODB_URI!);
+    cached.promise = mongoose
+      .connect(MONGODB_URI)
+      .then((mongoose) => mongoose);
   }
 
   cached.conn = await cached.promise;

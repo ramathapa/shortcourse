@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
+import { connectToDatabase } from "@/lib/mongodb";
 import Chat from "@/models/Chat";
 
 // Simple fuzzy match function (approximate string matching)
@@ -474,7 +474,7 @@ function getBotReply(message: string) {
 }
 
 export async function POST(req: Request) {
-  await connectDB();
+  await connectToDatabase();
   const { message, chatId } = await req.json();
   const now = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
