@@ -124,7 +124,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
 📍 Level 6, 56–58 York Street, Sydney NSW 2000
 
-📞 04 0670 5649
+📞 02 8530 8337
 
 ✉️ info@cardinalinstitute.edu.au`,
     },

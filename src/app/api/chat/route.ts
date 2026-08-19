@@ -46,7 +46,7 @@ function editDistance(a: string, b: string) {
 // ---------------------------------------------------------------------------
 
 const CONTACT = {
-  phone: "04 0670 5649",
+  phone: "02 8530 8337",
   phoneHref: "tel : +0285308337",
   // TODO: source documents show "admin@cardinainstitute.com.au" (TAS — note the
   // missing "l" in "cardinal") and "info@tba" (Fees policy). Confirm the real
