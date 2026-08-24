@@ -28,14 +28,11 @@ export interface Requirement {
 export interface ShortCourse {
   code: string;
 
-  // Folder name
+  // Folder / URL name
   slug: string;
 
-  // eSkilled Course Code
+  // eSkilled course code
   courseCode: string;
-
-  // eSkilled Group ID
-  groupId: string;
 
   title: string;
 
@@ -78,8 +75,6 @@ export const shortCourses: ShortCourse[] = [
 
     courseCode: "HLTAID009",
 
-    groupId: "200050",
-
     title: "Provide Cardiopulmonary Resuscitation",
 
     heroTitle: "HLTAID009 Provide CPR",
@@ -94,15 +89,19 @@ export const shortCourses: ShortCourse[] = [
 
     duration: "1 day equivalent (same day certification)",
 
-    delivery: "Blended mode (2-3 hrs Face-to-face training + online assessment) Contact us for more information or for other special requirements",
+    delivery:
+      "Blended mode (2-3 hrs Face-to-face training + online assessment). Contact us for more information or for other special requirements.",
 
-    certificate: "Statement of Attainment (issued same day)",
+    certificate:
+      "Statement of Attainment (issued same day)",
 
-    refresher: "Recommended every 12 months",
+    refresher:
+      "Recommended every 12 months",
 
     price: "-",
 
-    pageUrl: "/short-courses/HLTAID009CoursePage", 
+    pageUrl:
+      "/short-courses/HLTAID009CoursePage",
 
     enrolUrl:
       "/short-courses/HLTAID009CoursePage/enrol",
@@ -115,7 +114,9 @@ export const shortCourses: ShortCourse[] = [
       bleeding: false,
       asthma: false,
       anaphylaxis: false,
+
       renewal: "12 Months",
+
       suitableFor:
         "Healthcare workers, workplaces and annual CPR renewal",
     },
@@ -147,12 +148,17 @@ export const shortCourses: ShortCourse[] = [
 
     faq: [
       {
-        question: "How long does CPR certification last?",
+        question:
+          "How long does CPR certification last?",
+
         answer:
           "The Australian Resuscitation Council recommends renewing CPR every 12 months.",
       },
+
       {
-        question: "Is this nationally recognised?",
+        question:
+          "Is this nationally recognised?",
+
         answer:
           "Yes. Successful participants receive a Statement of Attainment.",
       },
@@ -166,11 +172,10 @@ export const shortCourses: ShortCourse[] = [
 
     courseCode: "HLTAID011",
 
-    groupId: "200050",
-
     title: "Provide First Aid",
 
-    heroTitle: "HLTAID011 Provide First Aid",
+    heroTitle:
+      "HLTAID011 Provide First Aid",
 
     description:
       "Develop practical first aid skills including CPR, burns, fractures, asthma, anaphylaxis and medical emergencies.",
@@ -180,17 +185,22 @@ export const shortCourses: ShortCourse[] = [
 
     image: "/courses/firstaidd.png",
 
-   duration: "1 day equivalent (same day certification)",
+    duration:
+      "1 day equivalent (same day certification)",
 
-    delivery: "Blended mode (2-3 hrs Face-to-face training + online assessment) Contact us for more information or for other special requirements",
+    delivery:
+      "Blended mode (2-3 hrs Face-to-face training + online assessment). Contact us for more information or for other special requirements.",
 
-    certificate: "Statement of Attainment (issued same day)",
+    certificate:
+      "Statement of Attainment (issued same day)",
 
-    refresher: "Recommended every 3 years",
+    refresher:
+      "Recommended every 3 years",
 
     price: "-",
 
-    pageUrl: "/short-courses/HLTAID011CoursePage",
+    pageUrl:
+      "/short-courses/HLTAID011CoursePage",
 
     enrolUrl:
       "/short-courses/HLTAID011CoursePage/enrol",
@@ -203,7 +213,9 @@ export const shortCourses: ShortCourse[] = [
       bleeding: true,
       asthma: true,
       anaphylaxis: true,
+
       renewal: "3 Years",
+
       suitableFor:
         "General workplace, childcare, aged care, disability and healthcare professionals",
     },
@@ -232,18 +244,23 @@ export const shortCourses: ShortCourse[] = [
         title: "Practical assessment required",
       },
       {
-        title: "Ability to complete CPR assessment",
+        title:
+          "Ability to complete CPR assessment",
       },
     ],
 
     faq: [
       {
         question: "How long is the course?",
+
         answer:
           "This course is delivered over one full day (approximately 8 hours).",
       },
+
       {
-        question: "Who should complete this course?",
+        question:
+          "Who should complete this course?",
+
         answer:
           "Anyone requiring workplace first aid certification or wishing to develop practical emergency response skills.",
       },

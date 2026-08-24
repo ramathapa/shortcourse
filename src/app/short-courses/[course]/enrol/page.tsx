@@ -2,6 +2,7 @@
 
 import { useSearchParams, useParams } from "next/navigation";
 import { notFound } from "next/navigation";
+
 import { shortCourses } from "@/lib/shortCourses";
 import { shortCourseEvents } from "@/lib/shortCourseEvents";
 
@@ -14,15 +15,13 @@ import {
 } from "lucide-react";
 
 export default function EnrolPage() {
-
   const params = useParams();
-
   const searchParams = useSearchParams();
 
   const courseSlug = params.course as string;
-
   const eventId = searchParams.get("event");
 
+  // Find the course
   const course = shortCourses.find(
     (c) => c.slug === courseSlug
   );
@@ -31,164 +30,217 @@ export default function EnrolPage() {
     notFound();
   }
 
+  // Find the event belonging to this course
   const event = shortCourseEvents.find(
-    (e) => e.id === eventId
+    (e) =>
+      e.id === eventId &&
+      e.courseSlug === courseSlug
   );
 
   if (!event) {
     notFound();
   }
 
-  const iframeUrl =
-    `https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=${event.id}&group=${course.groupId}&courseCode=${course.courseCode}&fromIFrame=true`;
+  // IMPORTANT:
+  // Use the exact eSkilled iframe URL stored
+  // in shortCourseEvents.ts
+  const iframeUrl = event.iframe;
 
   return (
-    <main className="bg-[#F8F8F8]">
+    <main className="bg-[#F8F8F8] min-h-screen">
 
-      {/* HERO */}
-
+      {/* ================= HERO ================= */}
       <section className="bg-[#0B1F3A] text-white py-16">
-
         <div className="max-w-6xl mx-auto px-6">
 
-          <span className="bg-[#C4A15A] text-[#0B1F3A] px-4 py-1 rounded-full font-semibold">
+          <span className="inline-block bg-[#C4A15A] text-[#0B1F3A] px-4 py-1 rounded-full font-semibold">
             Nationally Recognised Training
           </span>
 
-          <h1 className="text-5xl font-bold mt-5">
+          <h1 className="text-4xl md:text-5xl font-bold mt-5">
             {course.code}
           </h1>
 
-          <h2 className="text-3xl mt-2">
+          <h2 className="text-2xl md:text-3xl mt-2">
             {course.title}
           </h2>
 
-        </div>
+          <p className="mt-5 max-w-3xl text-gray-200 leading-relaxed">
+            {course.description}
+          </p>
 
+        </div>
       </section>
 
-      {/* EVENT */}
 
+      {/* ================= EVENT DETAILS ================= */}
       <section className="py-10">
-
         <div className="max-w-6xl mx-auto px-6">
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
+            {/* DATE */}
             <div className="bg-white rounded-xl shadow p-6">
+              <CalendarDays className="w-7 h-7 text-[#C4A15A]" />
 
-              <CalendarDays className="text-[#C4A15A]" />
+              <p className="text-gray-500 mt-3">
+                Date
+              </p>
 
-              <p className="text-gray-500 mt-3">Date</p>
-
-              <h3>{event.date}</h3>
-
+              <h3 className="font-semibold text-[#0B1F3A] mt-1">
+                {event.date}
+              </h3>
             </div>
 
+
+            {/* TIME */}
             <div className="bg-white rounded-xl shadow p-6">
+              <Clock3 className="w-7 h-7 text-[#C4A15A]" />
 
-              <Clock3 className="text-[#C4A15A]" />
+              <p className="text-gray-500 mt-3">
+                Time
+              </p>
 
-              <p className="text-gray-500 mt-3">Time</p>
-
-              <h3>{event.time}</h3>
-
+              <h3 className="font-semibold text-[#0B1F3A] mt-1">
+                {event.time}
+              </h3>
             </div>
 
+
+            {/* VENUE */}
             <div className="bg-white rounded-xl shadow p-6">
+              <MapPin className="w-7 h-7 text-[#C4A15A]" />
 
-              <MapPin className="text-[#C4A15A]" />
+              <p className="text-gray-500 mt-3">
+                Venue
+              </p>
 
-              <p className="text-gray-500 mt-3">Venue</p>
-
-              <h3>{event.venue}</h3>
-
+              <h3 className="font-semibold text-[#0B1F3A] mt-1">
+                {event.venue}
+              </h3>
             </div>
 
+
+            {/* PRICE */}
             <div className="bg-white rounded-xl shadow p-6">
+              <DollarSign className="w-7 h-7 text-[#C4A15A]" />
 
-              <DollarSign className="text-[#C4A15A]" />
+              <p className="text-gray-500 mt-3">
+                Price
+              </p>
 
-              <p className="text-gray-500 mt-3">Price</p>
+              <h3 className="font-semibold text-[#0B1F3A] mt-1">
+                {event.price}
+              </h3>
+            </div>
 
-              <h3>{event.price}</h3>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* ================= BEFORE YOU ENROL ================= */}
+      <section className="pb-10">
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="bg-white rounded-xl shadow p-8">
+
+            <h2 className="text-3xl font-bold text-[#0B1F3A] mb-8">
+              Before You Enrol
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+              {[
+                "Bring photo identification",
+                "Arrive 15 minutes early",
+                "Wear comfortable clothing",
+                "Practical assessment required",
+                "Statement of Attainment issued",
+                "Nationally recognised training",
+              ].map((item) => (
+
+                <div
+                  key={item}
+                  className="flex items-center gap-3 text-gray-700"
+                >
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+
+                  <span>
+                    {item}
+                  </span>
+                </div>
+
+              ))}
 
             </div>
 
           </div>
 
         </div>
-
       </section>
 
-      {/* BEFORE YOU ENROL */}
 
-      <section className="pb-10">
+      {/* ================= ENROLMENT FORM ================= */}
+      <section className="pb-20">
+        <div className="max-w-6xl mx-auto px-6">
 
-        <div className="max-w-6xl mx-auto px-6 bg-white rounded-xl shadow p-8">
+          <div className="bg-white rounded-xl shadow overflow-hidden">
 
-          <h2 className="text-3xl font-bold text-[#0B1F3A] mb-8">
-            Before You Enrol
-          </h2>
+            {/* FORM HEADER */}
+            <div className="p-8 border-b">
 
-          <div className="grid md:grid-cols-2 gap-5">
+              <h2 className="text-3xl font-bold text-[#0B1F3A]">
+                Complete Your Enrolment
+              </h2>
 
-            {[
-              "Bring photo identification",
-              "Arrive 15 minutes early",
-              "Wear comfortable clothing",
-              "Practical assessment required",
-              "Statement of Attainment issued",
-              "Nationally recognised qualification",
-            ].map((item) => (
+              <p className="text-gray-600 mt-2">
+                Please complete the enrolment form below to apply for this course.
+              </p>
 
-              <div
-                key={item}
-                className="flex items-center gap-3"
-              >
+              <div className="mt-4 bg-[#F8F8F8] rounded-lg p-4">
 
-                <CheckCircle className="text-green-600" />
+                <p className="text-sm text-gray-600">
+                  <strong>Course:</strong>{" "}
+                  {course.code} – {course.title}
+                </p>
 
-                {item}
+                <p className="text-sm text-gray-600 mt-1">
+                  <strong>Date:</strong>{" "}
+                  {event.date}
+                </p>
+
+                <p className="text-sm text-gray-600 mt-1">
+                  <strong>Time:</strong>{" "}
+                  {event.time}
+                </p>
 
               </div>
 
-            ))}
+            </div>
+
+
+            {/* ESKILLED FORM */}
+            <div className="w-full">
+
+              <iframe
+                src={iframeUrl}
+                title={`${course.code} Enrolment Form`}
+                className="w-full border-0"
+                style={{
+                  height: "7900px",
+                  display: "block",
+                }}
+                scrolling="no"
+              />
+
+            </div>
 
           </div>
 
         </div>
-
       </section>
-
-      {/* ESKILLED */}
-
-     {/* ESKILLED */}
-<section className="pb-20">
-  <div className="max-w-6xl mx-auto px-6 bg-white rounded-xl shadow overflow-hidden">
-
-    <div className="p-8">
-      <h2 className="text-3xl font-bold text-[#0B1F3A]">
-        Complete Your Enrolment
-      </h2>
-
-      <p className="text-gray-600 mt-2">
-        Please complete the enrolment form below.
-      </p>
-    </div>
-
-    <iframe
-      src={iframeUrl}
-      title="Course Enrolment Form"
-      className="w-full border-0"
-      style={{
-        height: "500px",
-        display: "block",
-      }}
-    />
-
-  </div>
-</section>
 
     </main>
   );
