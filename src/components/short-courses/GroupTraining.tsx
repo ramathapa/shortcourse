@@ -161,7 +161,7 @@ export default function GroupTraining() {
                 </Link>
 
                 <a
-                  href="tel : +0285308337"
+                  href="tel:+61285308337"
                   className="inline-flex items-center px-8 py-4 border border-[#0B1F3A] rounded-xl text-[#0B1F3A] font-semibold tracking-wide hover:bg-[#0B1F3A] hover:text-white transition"
                 >
                   Call 02 8530 8337

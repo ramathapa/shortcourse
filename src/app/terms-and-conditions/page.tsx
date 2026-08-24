@@ -185,7 +185,7 @@ export default function TermsAndConditionsPage() {
           Level 6, 56-58 York Street, Sydney NSW 2000
           <br />
           Phone:{" "}
-          <a href="tel : +0285308337" className="text-[#0B1F3A] font-semibold">
+          <a href="tel:+61285308337" className="text-[#0B1F3A] font-semibold">
             02 8530 8337
           </a>
         </p>

@@ -114,7 +114,7 @@ export default function Header() {
   {/* Phone */}
 
               <a
-  href="tel : +0285308337"
+  href="tel:+61285308337"
   className="flex items-center gap-1 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
 >
   <Phone className="w-6 h-6 text-[#C4A15A]" />
