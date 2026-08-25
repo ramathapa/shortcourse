@@ -1,34 +1,27 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Short Course Accreditation & Compliance | Cardinal Institute",
+  description:
+    "Learn about accreditation, compliance and quality standards for short courses at Cardinal Institute of Education in Sydney.",
+};
 
 export default function AccreditationPage() {
   return (
     <main className="w-full bg-white">
-
       <section className="max-w-6xl mx-auto px-6 py-16">
 
+        {/* Page Heading */}
         <h1 className="text-4xl font-bold text-[#0B1F3A] mb-6">
           Accreditation & Compliance
         </h1>
 
         <p className="text-lg text-gray-700 mb-10">
-          At Cardinal Institute of Education, quality and accountability sit at
-          the centre of everything we do. Every course we deliver is built on
-          nationally recognised training packages and shaped by regulatory
-          requirements, so students can enrol with confidence knowing their
-          education meets Australian vocational standards.
-        </p>
-
-        {/* Commitment */}
-        <h2 className="text-2xl font-semibold text-[#0B1F3A] mb-4">
-          Our Commitment to Quality Training
-        </h2>
-
-        <p className="text-gray-700 mb-8">
-          Our training and assessment strategies are developed in consultation
-          with employers, industry representatives, and subject matter experts
-          in the aged care and disability sectors. This ensures that what
-          students learn in the classroom and simulated environments reflects
-          the skills genuinely required in today&apos;s care workplaces.
+          At Cardinal Institute of Education, quality, compliance and student
+          safety are central to the short courses we deliver. Our training is
+          designed and delivered in accordance with applicable Australian
+          vocational education and training requirements, giving students
+          confidence in the quality and relevance of their training.
         </p>
 
         {/* RTO */}
@@ -38,69 +31,106 @@ export default function AccreditationPage() {
 
         <p className="text-gray-700 mb-6">
           Cardinal Institute of Education operates as a Registered Training
-          Organisation in accordance with the Standards for Registered
-          Training Organisations 2025, regulated by the Australian Skills
-          Quality Authority (ASQA).
+          Organisation (RTO) and delivers training in accordance with the
+          requirements that apply to registered training organisations in
+          Australia.
         </p>
 
         <ul className="list-disc pl-6 text-gray-700 mb-10 space-y-2">
-          <li>Regulated by the Australian Skills Quality Authority (ASQA)</li>
-          <li>Delivering qualifications within our approved scope of registration</li>
-          <li>Subject to ongoing regulatory monitoring and audit</li>
+          <li>
+            Regulated by the Australian Skills Quality Authority (ASQA), where
+            applicable to our scope of registration
+          </li>
+          <li>
+            Short courses are delivered within our approved scope of
+            registration
+          </li>
+          <li>
+            Training and assessment processes are maintained in accordance
+            with applicable regulatory requirements
+          </li>
         </ul>
 
-        {/* Nationally recognised */}
+        {/* Nationally Recognised Training */}
         <h2 className="text-2xl font-semibold text-[#0B1F3A] mb-4">
           Nationally Recognised Training
         </h2>
 
         <p className="text-gray-700 mb-10">
-          All qualifications we deliver sit within the Australian
-          Qualifications Framework (AQF). Graduates receive an AQF
-          qualification on successful completion, while students who complete
-          individual units are issued a Statement of Attainment recognised by
-          employers and training providers across Australia.
+          Where a short course is delivered as nationally recognised training,
+          it is based on the relevant nationally recognised unit of competency
+          and is delivered and assessed according to the applicable training
+          and assessment requirements. Successful participants receive the
+          appropriate nationally recognised credential or Statement of
+          Attainment where applicable.
         </p>
 
-        {/* Industry alignment */}
+        {/* Quality Training */}
         <h2 className="text-2xl font-semibold text-[#0B1F3A] mb-4">
-          Industry Partnerships & Alignment
+          Our Commitment to Quality Training
         </h2>
 
+        <p className="text-gray-700 mb-8">
+          Our short courses are designed to provide practical, relevant and
+          competency-focused training. Learning activities and assessments are
+          structured to help participants develop the knowledge and practical
+          skills required for the relevant course.
+        </p>
+
         <ul className="list-disc pl-6 text-gray-700 mb-10 space-y-2">
-          <li>Ongoing consultation recorded through our Industry Consultation Register</li>
-          <li>Course structure and assessment validated by sector professionals</li>
-          <li>Supervised work placement arranged with approved industry partners</li>
+          <li>Clear course information provided before enrolment</li>
+          <li>
+            Training and assessment activities aligned with course
+            requirements
+          </li>
+          <li>Qualified and appropriately experienced trainers and assessors</li>
+          <li>Practical learning activities where required</li>
+          <li>Assessment decisions based on the relevant competency requirements</li>
         </ul>
 
-        {/* Compliance */}
+        {/* Compliance & Continuous Improvement */}
         <h2 className="text-2xl font-semibold text-[#0B1F3A] mb-4">
           Compliance & Continuous Improvement
         </h2>
 
+        <p className="text-gray-700 mb-6">
+          We regularly review our short course delivery, training resources
+          and assessment processes to support quality outcomes and continuous
+          improvement.
+        </p>
+
         <ul className="list-disc pl-6 text-gray-700 mb-10 space-y-2">
-          <li>Systematic validation of assessment tools and judgements on a planned cycle</li>
-          <li>Trainers and assessors maintain vocational competency and industry currency</li>
-          <li>A Continuous Improvement Register capturing feedback and actions</li>
-          <li>Regular review of training resources against training package updates</li>
+          <li>
+            Regular review of training and assessment materials
+          </li>
+          <li>
+            Monitoring of trainer competency and industry currency
+          </li>
+          <li>
+            Collection and review of student feedback
+          </li>
+          <li>
+            Continuous improvement actions where opportunities are identified
+          </li>
+          <li>
+            Review of course information when relevant requirements are updated
+          </li>
         </ul>
 
-        {/* Ethics */}
+        {/* Student Support */}
         <h2 className="text-2xl font-semibold text-[#0B1F3A] mb-4">
           Student Support & Ethical Practice
         </h2>
 
         <p className="text-gray-700">
-          We treat every student fairly and transparently — from pre-enrolment
-          information and LLND support through to assessment, complaints and
-          appeals, and the handling of personal information under the Privacy
-          Act 1988 and the Australian Privacy Principles. Individual support
-          plans are available where needed, so no learner is left to navigate
-          their study alone.
+          We aim to provide students with clear and transparent information
+          throughout their short course experience. This includes information
+          about course requirements, assessment, fees, enrolment and available
+          support. Students can also access our complaints and appeals
+          processes and appropriate support for their learning needs.
         </p>
 
       </section>
-
     </main>
   );
 }

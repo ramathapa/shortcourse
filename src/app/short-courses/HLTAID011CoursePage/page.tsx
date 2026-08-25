@@ -8,6 +8,7 @@ import { shortCourses } from "@/lib/shortCourses";
 import CourseOverview from "@/components/short-courses/CourseOverview";
 import UpcomingEvents from "@/components/short-courses/UpcomingEvents";
 
+
 export default function HLTAID011CoursePage() {
   const [openSections, setOpenSections] = useState<number[]>([]);
 

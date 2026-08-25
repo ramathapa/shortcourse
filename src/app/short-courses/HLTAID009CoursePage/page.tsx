@@ -9,6 +9,7 @@ import CourseOverview from "@/components/short-courses/CourseOverview";
 import UpcomingEvents from "@/components/short-courses/UpcomingEvents";
 import { shortCourses } from "@/lib/shortCourses";
 
+
 interface CourseSection {
   title: string;
   content: string;
@@ -199,6 +200,9 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
           <p className="text-[#E8DFD5] text-base sm:text-lg md:text-xl mt-3">
             Nationally Recognised Training
+          </p>
+          <p className="text-white/90 mt-4 max-w-2xl">
+            {course.description}
           </p>
 
         </div>

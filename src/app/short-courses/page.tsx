@@ -6,6 +6,8 @@ import WhyChoose from "@/components/short-courses/WhyChoose";
 import GroupTraining from "@/components/short-courses/GroupTraining";
 import FAQ from "@/components/short-courses/FAQ";
 
+
+
 export default function ShortCoursesPage() {
   return (
     <main>

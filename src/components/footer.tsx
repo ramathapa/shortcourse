@@ -112,13 +112,14 @@ export default function Footer() {
         </Link>
       </li>
       <li className="leading-snug">
-       
-          We also offer long courses CHC33021 – Certificate III in Individual Support, CHC43015 – Certificate IV in Ageing Support, CHC43121 – Certificate IV in Disability Support
-        
-      </li>
+     <span className="leading-snug">
+              Looking for our Certificate III and IV qualifications? Visit 
+             </span>
+             </li>
+      
        <li className="leading-snug">
-        <Link href="https://cardinalinstitute.com.au/" className="hover:underline">
-       please go to our other website cardinalinstitute.com.au  </Link>
+        <Link href="https://cardinalinstitute.edu.au/" className="hover:underline">
+       cardinalinstitute.edu.au  </Link>
       </li>
 
     </ul>
@@ -152,7 +153,7 @@ export default function Footer() {
             <div className="flex space-x-5 mt-4">
             <a href="https://www.facebook.com/profile.php?id=61582219676402" className="text-[#C4A15A] hover:text-[#9c255f] transition"><FaFacebookF className="w-7 h-7" /></a>
             <a
-  href="https://x.com"  target="_blank"  rel="noopener noreferrer"  className="text-[#C4A15A] hover:text-[#9c255f] transition">  <FaXTwitter className="w-7 h-7" /></a>
+  href="https://x.com/cardinal_instit"  target="_blank"  rel="noopener noreferrer"  className="text-[#C4A15A] hover:text-[#9c255f] transition">  <FaXTwitter className="w-7 h-7" /></a>
  <a href="https://www.instagram.com/cardinal_institute" className="text-[#C4A15A] hover:text-[#9c255f] transition"><FaInstagram className="w-7 h-7" /></a>
             <a href="https://www.linkedin.com/company/112751946/admin/dashboard/" className="text-[#C4A15A] hover:text-[#9c255f] transition"><FaLinkedinIn className="w-7 h-7" /></a>
           </div>
@@ -168,12 +169,12 @@ export default function Footer() {
             © {new Date().getFullYear()} Cardinal Institute of Education. All rights reserved.
           </p>
 
-          <div className="flex justify-center w-full sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 gap-4">
+          {/* <div className="flex justify-center w-full sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 gap-4">
             <img src="/icons/mastercard.png" className="h-10" />
             <img src="/icons/visa.png" className="h-10" />
             <img src="/icons/applepay.png" className="h-10" />
             <img src="/icons/googlepay.png" className="h-10" />
-          </div>
+          </div> */}
         </div>
       </div>
 

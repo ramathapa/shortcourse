@@ -1,7 +1,16 @@
-// app/about/layout.tsx
-import type React from "react";
 
-export default function AboutLayout({ children }: { children: React.ReactNode }) {
-  // Only wrap children, do NOT include Header/Footer/Chatbot
-  return <>{children}</>;
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | CPR & First Aid Short Courses Sydney",
+  description:
+    "Contact Cardinal Institute of Education in Sydney about CPR, First Aid and group training bookings. Enquire about course dates, workplace training and enrolment.",
+};
+
+export default function ContactLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
 }

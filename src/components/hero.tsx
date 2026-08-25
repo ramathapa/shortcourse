@@ -19,7 +19,7 @@ export default function Hero() {
   </h1>
 
   <p className="text-lg text-[#0B1F3A]/90 leading-relaxed w-full">
- Cardinal Institute of Education is a Registered Training Organisation providing nationally recognised aged care and disability training. We deliver Certificate III & IV qualifications, First Aid courses, and practical skill development for domestic students. Our programs focus on safety, inclusion, person-centred care, and preparing a skilled, compassionate workforce.</p>
+ Cardinal Institute of Education is a Registered Training Organisation (RTO 46594) delivering nationally recognised First Aid and CPR training in Sydney. Our short courses are designed to provide participants with practical knowledge and essential skills for responding to emergency situations.</p>
 
   <div className="flex flex-wrap gap-4 mt-10 w-full">
     <Link

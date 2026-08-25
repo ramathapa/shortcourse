@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -40,16 +39,23 @@ export default function CTAOtherPage() {
 
   {/* Book Now Button */}
   <motion.a
-    href="/contact"
-    animate={{ scale: [1, 1.05, 1] }}
-    transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
-    className="bg-[#C4A15A] text-white px-8 py-3 rounded-xl font-semibold transform hover:-translate-y-1 transition-all duration-300 shadow-md transition"
-  >
-    Book Now
-  </motion.a>
+  href="https://cardinalinstitute.rto.net.au/Form/Index?id=cardinalinstitute&formType=1"
+  target="_blank"
+  rel="noopener noreferrer"
+  animate={{ scale: [1, 1.05, 1] }}
+  transition={{
+    duration: 1.4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="bg-[#C4A15A] text-white px-8 py-3 rounded-xl font-semibold transform hover:-translate-y-1 transition-all duration-300 shadow-md"
+>
+  Enrol Now
+</motion.a>
 
 </div>
       </section>
     </main>
   );
 }
+ 
