@@ -15,7 +15,7 @@ export const shortCourseEvents: CourseEvent[] = [
     date: "13th October 2026",
     time: "9:00 AM – 5:00 PM",
     venue: "Cardinal Institute",
-    price: "-",
+    price: "Normally $179, now $99 for limited time, including both HLTAID009 and HLTAID011",
     iframe:
      "https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=58696&group=200050&courseCode=HLTAID011&fromIFrame=true",
   },
@@ -26,7 +26,7 @@ export const shortCourseEvents: CourseEvent[] = [
     date: "20th October 2026",
     time: "9:00 AM – 5:00 PM",
     venue: "Cardinal Institute",
-    price: "-",
+    price: "Normally $179, now $99 for limited time, including both HLTAID009 and HLTAID011",
     iframe:
      "https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=58696&group=200049&courseCode=HLTAID011&fromIFrame=true",
   },
@@ -37,7 +37,7 @@ export const shortCourseEvents: CourseEvent[] = [
     date: "13th October 2026",
     time: "9:00 AM – 5:00 PM",
     venue: "Cardinal Institute",
-    price: "-",
+    price: "$65",
     iframe:
       "https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=63806&group=214576&courseCode=HLTAID009&fromIFrame=true",
   },
@@ -48,7 +48,7 @@ export const shortCourseEvents: CourseEvent[] = [
     date: "20th October 2026",
     time: "9:00 AM – 5:00 PM",
     venue: "Cardinal Institute",
-    price: "-",
+    price: "$65",
     iframe:
       "https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=63806&group=214577&courseCode=HLTAID009&fromIFrame=true",
   },

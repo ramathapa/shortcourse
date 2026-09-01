@@ -86,7 +86,7 @@ export default function UpcomingEvents({
 
                     <td className="p-5">{event.venue}</td>
 
-                    <td className="p-5 font-semibold">
+                    <td className="p-5">
                       {event.price}
                     </td>
 
