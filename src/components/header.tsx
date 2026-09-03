@@ -120,6 +120,14 @@ export default function Header() {
   <Phone className="w-6 h-6 text-[#C4A15A]" />
   <span>02 8530 8337</span>
 </a>
+    <a
+  href="tel:+0494799291"
+  className="flex items-center gap-1 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+>
+  <Phone className="w-6 h-6 text-[#C4A15A]" />
+  <span>0494 799 291</span>
+</a>
+
   
 
   {/* Email */}

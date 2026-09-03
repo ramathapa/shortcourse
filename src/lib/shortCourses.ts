@@ -90,7 +90,7 @@ export const shortCourses: ShortCourse[] = [
     duration: "1 day equivalent (same day certification)",
 
     delivery:
-      "Blended mode (2-3 hrs Face-to-face training + online assessment). Contact us for more information or for other special requirements.",
+      "Blended mode (2 hrs Face-to-face training + online assessment). Contact us for more information or for other special requirements.",
 
     certificate:
       "Statement of Attainment (issued same day)",
@@ -189,7 +189,7 @@ export const shortCourses: ShortCourse[] = [
       "1 day equivalent (same day certification)",
 
     delivery:
-      "Blended mode (2-3 hrs Face-to-face training + online assessment). Contact us for more information or for other special requirements.",
+      "Blended mode (3 hrs Face-to-face training + online assessment). Contact us for more information or for other special requirements.",
 
     certificate:
       "Statement of Attainment (issued same day)",

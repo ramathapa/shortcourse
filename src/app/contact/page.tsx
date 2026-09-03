@@ -207,7 +207,7 @@ export default function ContactPage() {
                 </p>
 
                 <p>
-                  02 8530 8337
+                  02 8530 8337  OR <span>0494 799 291</span>
                 </p>
               </div>
             </div>

@@ -37,7 +37,7 @@ export const shortCourseEvents: CourseEvent[] = [
     date: "13th October 2026",
     time: "9:00 AM – 5:00 PM",
     venue: "Cardinal Institute",
-    price: "$65",
+    price: "Normally $89, now $59 for CPR only",
     iframe:
       "https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=63806&group=214576&courseCode=HLTAID009&fromIFrame=true",
   },
@@ -48,7 +48,7 @@ export const shortCourseEvents: CourseEvent[] = [
     date: "20th October 2026",
     time: "9:00 AM – 5:00 PM",
     venue: "Cardinal Institute",
-    price: "$65",
+    price: "Normally $89, now $59 for CPR only",
     iframe:
       "https://cardinalinstitute.rto.net.au/Form/Index?formType=1&directLink=true&id=cardinalinstitute&del=63806&group=214577&courseCode=HLTAID009&fromIFrame=true",
   },
