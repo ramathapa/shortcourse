@@ -306,107 +306,103 @@ export default function GroupTraining() {
         {/* =========================
             CPR $65 OFFER
         ========================== */}
-        <div className="mt-20 bg-[#0B1F3A] rounded-3xl shadow-xl overflow-hidden">
+       <section className="bg-[#F8F8F8] py-20">
 
-          <div className="grid lg:grid-cols-3 items-center">
+  <div className="max-w-6xl mx-auto px-6">
 
-            {/* Content */}
-            <div className="p-10 lg:p-12 lg:col-span-2 text-white">
+    <div className="bg-[#0B1F3A] rounded-3xl overflow-hidden shadow-xl">
 
-              <span className="inline-block bg-[#C4A15A] text-[#0B1F3A] px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide">
-                CPR Training
-              </span>
+      <div className="grid lg:grid-cols-3 items-center">
 
+        {/* Content */}
+        <div className="p-8 md:p-10 lg:col-span-2 text-white">
 
-              <h3 className="text-3xl md:text-4xl font-bold tracking-wide mt-5">
-                CPR Training From $65 Per Person
-              </h3>
+          <span className="inline-block bg-[#C4A15A] text-[#0B1F3A] px-4 py-2 rounded-full text-sm font-bold">
+            CPR TRAINING
+          </span>
 
+          <h2 className="text-3xl md:text-4xl font-bold mt-5">
+            CPR Training – Now Only $59 Per Person
+          </h2>
 
-              <p className="mt-5 text-gray-300 leading-8 max-w-2xl">
-                CPR training available for workplaces, childcare centres,
-                schools, gyms, aged care providers, disability providers and
-                community organisations.
-              </p>
+          <p className="mt-4 text-gray-300 leading-7 max-w-2xl">
+            CPR training available for workplaces, childcare centres,
+            schools, gyms, aged care providers, disability providers and
+            community organisations.
+          </p>
 
+          <div className="flex flex-wrap gap-x-6 gap-y-3 mt-6">
 
-              <div className="grid sm:grid-cols-2 gap-3 mt-6">
-
-                <div className="flex items-center gap-2 text-gray-200">
-                  <CheckCircle
-                    size={19}
-                    className="text-[#C4A15A]"
-                  />
-                  Group bookings
-                </div>
-
-
-                <div className="flex items-center gap-2 text-gray-200">
-                  <CheckCircle
-                    size={19}
-                    className="text-[#C4A15A]"
-                  />
-                  Workplace training
-                </div>
-
-
-                <div className="flex items-center gap-2 text-gray-200">
-                  <CheckCircle
-                    size={19}
-                    className="text-[#C4A15A]"
-                  />
-                  Flexible scheduling
-                </div>
-
-
-                <div className="flex items-center gap-2 text-gray-200">
-                  <CheckCircle
-                    size={19}
-                    className="text-[#C4A15A]"
-                  />
-                  Experienced trainers
-                </div>
-
-              </div>
-
-
-              <Link
-                href="/corporate"
-                className="inline-flex items-center gap-2 mt-8 bg-[#C4A15A] text-[#0B1F3A] px-8 py-4 rounded-xl font-bold hover:scale-105 transition"
-              >
-                Enquire About CPR Training
-
-                <ArrowRight size={20} />
-
-              </Link>
-
+            <div className="flex items-center gap-2">
+              <CheckCircle
+                className="text-[#C4A15A]"
+                size={20}
+              />
+              Group bookings
             </div>
 
+            <div className="flex items-center gap-2">
+              <CheckCircle
+                className="text-[#C4A15A]"
+                size={20}
+              />
+              Workplace delivery
+            </div>
 
-            {/* Price */}
-            <div className="bg-[#C4A15A] text-[#0B1F3A] min-h-[300px] flex flex-col items-center justify-center text-center p-8">
-
-              <p className="uppercase tracking-[3px] text-sm font-bold">
-                CPR Training
-              </p>
-
-              <div className="text-7xl font-extrabold mt-2">
-                $65
-              </div>
-
-              <p className="text-xl font-bold mt-2">
-                Per Person
-              </p>
-
-              <p className="text-sm mt-3 max-w-xs leading-6">
-                Available for workplaces and organisations.
-              </p>
-
+            <div className="flex items-center gap-2">
+              <CheckCircle
+                className="text-[#C4A15A]"
+                size={20}
+              />
+              Flexible scheduling
             </div>
 
           </div>
 
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 mt-7 bg-[#C4A15A] text-[#0B1F3A] px-7 py-3.5 rounded-full font-bold hover:scale-105 transition"
+          >
+            Enquire About CPR Training
+            <ArrowRight size={19} />
+          </Link>
+
         </div>
+
+        {/* Price */}
+        <div className="bg-[#C4A15A] text-[#0B1F3A] min-h-[280px] flex flex-col items-center justify-center text-center p-8">
+
+          <p className="uppercase tracking-[3px] text-sm font-bold">
+            CPR Training
+          </p>
+
+          {/* Original Price */}
+          <p className="text-xl font-bold mt-3 line-through opacity-70">
+            Normally $89
+          </p>
+
+          {/* Sale Price */}
+          <div className="text-7xl font-extrabold mt-1">
+            $59
+          </div>
+
+          <p className="font-bold text-xl mt-1">
+            Per Person
+          </p>
+
+          <p className="text-sm mt-3 max-w-xs">
+            Special offer for CPR training only.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
         {/* =========================
@@ -469,6 +465,11 @@ export default function GroupTraining() {
                   className="inline-flex items-center px-8 py-4 border border-[#0B1F3A] rounded-xl text-[#0B1F3A] font-semibold tracking-wide hover:bg-[#0B1F3A] hover:text-white transition"
                 >
                   Call 02 8530 8337
+                </a> OR   <a
+                  href="tel:+61494799291"
+                  className="inline-flex items-center px-8 py-4 border border-[#0B1F3A] rounded-xl text-[#0B1F3A] font-semibold tracking-wide hover:bg-[#0B1F3A] hover:text-white transition"
+                >
+                  Call 0494 799 291
                 </a>
 
               </div>
