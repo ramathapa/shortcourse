@@ -444,19 +444,19 @@ export default function UpcomingEvents({
 
         <div className="mt-8 text-center">
 
-          <p className="text-sm text-gray-500">
-            Can't find a suitable date or session?
-            {" "}
+        <p className="text-sm text-gray-500">
+  Can&apos;t find a suitable date or session?
+  {" "}
 
-            <Link
-              href="/contact"
-              className="font-semibold text-[#0B1F3A] hover:text-[#C4A15A] transition"
-            >
-              Contact our team
-            </Link>
-            {" "}
-            for assistance.
-          </p>
+  <Link
+    href="/contact"
+    className="font-semibold text-[#0B1F3A] hover:text-[#C4A15A] transition"
+  >
+    Contact our team
+  </Link>
+  {" "}
+  for assistance.
+</p>
 
         </div>
 
