@@ -92,7 +92,7 @@ export default function Header() {
       ],
       basePath: "/courses",
     },
-
+    { name: "Blog", path: "/blog" },
    { name: "FAQ", path: "/faq" },
     // { name: "Career Hub", path: "/career-hub" },
     
