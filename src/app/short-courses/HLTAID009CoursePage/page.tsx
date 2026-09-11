@@ -212,6 +212,35 @@ Successful participants receive a nationally recognised Statement of Attainment.
 
       <CourseOverview course={course} />
 
+       {/* ================= SPECIAL OFFER CARD ================= */}
+      <section className="w-full py-8 px-4 sm:px-6 md:px-10 bg-[#E8DFD5]">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className="bg-[#C4A15A] text-white text-center py-3">
+              <p className="text-sm sm:text-base font-bold uppercase tracking-wide">
+                Limited Time Offer
+              </p>
+            </div>
+            <div className="p-6 sm:p-8 text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#0B1F3A] mb-4">
+                HLTAID009 Provide CPR
+              </h3>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+                <div className="text-gray-400 line-through text-xl sm:text-2xl">
+                  $89
+                </div>
+                <div className="text-4xl sm:text-5xl font-bold text-[#2a6f97]">
+                  $59
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm sm:text-base">
+                For CPR only
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ================= UPCOMING EVENTS ================= */}
 
       <UpcomingEvents courseSlug={course.slug} />
