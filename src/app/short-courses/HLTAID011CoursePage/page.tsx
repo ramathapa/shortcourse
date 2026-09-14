@@ -123,7 +123,7 @@ Successful participants receive a nationally recognised Statement of Attainment.
       title: "Contact and Enrolment Information",
       content: `Cardinal Institute of Education Pty Ltd (RTO 46594)
 
-📍 Level 6, 56–58 York Street, Sydney NSW 2000
+📍 Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148
 
 📞 02 8530 8337 OR 0494 799 291
 

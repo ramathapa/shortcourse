@@ -237,7 +237,7 @@ export default function ContactPage() {
                 </p>
 
                 <p>
-                  Level 6, 56-58 York Street, Sydney NSW 2000
+                  Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148
                 </p>
               </div>
             </div>

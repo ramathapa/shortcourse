@@ -352,7 +352,7 @@ export default function RefundPolicyPage() {
         <p className="text-gray-700">
           Cardinal Institute of Education
           <br />
-          Level 6, 56-58 York Street, Sydney NSW 2000
+          Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148
           <br />
           Phone:{" "}
           <a

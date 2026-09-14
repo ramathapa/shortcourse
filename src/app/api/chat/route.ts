@@ -52,10 +52,10 @@ const CONTACT = {
   // missing "l" in "cardinal") and "info@tba" (Fees policy). Confirm the real
   // address before publishing.
   email: "info@cardinalinstitute.edu.au",
-  // TODO: TAS CHC33021 lists Level 6, 56-58 York Street, Sydney NSW 2000 as the
+  // TODO: TAS CHC33021 lists Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148 as the
   // delivery location, while the Refund Request Form lists the Blacktown office.
   // Confirm which address is the training venue and which is administrative.
-  address: "Level 6, 56-58 York Street, Sydney NSW 2000",
+  address: "Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148",
   // TODO: RTO Code 46594 appears in the TAS documents; the Fees policy still
   // says "TBA". Confirm before displaying.
   rtoCode: "46594",

@@ -41,7 +41,7 @@ export default function Footer() {
                 Cardinal Institute of Education
               </p>
               <p className="mt-1 text-white/80 leading-snug">
-                Level 6, 56-58 York Street, Sydney NSW 2000
+                Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148
               </p>
               <p className="mt-1 text-white/80">
                 Training & Education Provider
@@ -137,7 +137,7 @@ export default function Footer() {
              <li className="flex items-start gap-3">
   <MapPin className="w-6 h-6 text-[#C4A15A] flex-shrink-0 mt-0.5" />
   <span className="leading-snug">
-    Level 6, 56-58 York Street, Sydney NSW 2000
+    Suite 207/30 Campbell St, BLACKTOWN, NSW, 2148
   </span>
 </li>
               <li className="flex items-center gap-3">
