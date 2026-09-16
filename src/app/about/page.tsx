@@ -188,7 +188,7 @@ export default function AboutUsPage() {
           {/* LEFT — GOOGLE MAP */}
           <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.7733633709327!2d151.20371207659892!3d-33.869731219108616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3f113a96a9%3A0x42aeae16d6e8cc74!2sLevel%206%2F56-58%20York%20St%2C%20Sydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2snp!4v1783573695308!5m2!1sen!2snp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.574663546746!2d150.90716177659525!3d-33.77165541403542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1298ff87bfffff%3A0x17be6eee6322860!2sSuite%20207%2F30%20Campbell%20St%2C%20Blacktown%20NSW%202148%2C%20Australia!5e0!3m2!1sen!2snp!4v1789531370684!5m2!1sen!2snp"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
